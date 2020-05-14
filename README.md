@@ -33,8 +33,8 @@ Configuration file:
 configuration explanation:
 -------------------------------
 SourceAddr|-----------|DstBindIp         
---------->| smartProxy|---------------> DstAddr  
-    server|-----------| client  
+--------->|smartProxy |---------------> DstAddr  
+server|-----------| client  
   
 AclRule: IPNets["10.1.1.2/24","2.2.2.2/16"]  Rule: 0 permit; 1 deny  
 
