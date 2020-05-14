@@ -1,9 +1,11 @@
 # smartProxy
-TCP/UDP proxy
+TCP/UDP L4 layer proxy
+=====================
 ![logic diagram](https://github.com/chaoyujiang/style-pictures/blob/master/smartProxy.jpg)
 
 
-Configuration file:  
+Configuration file:
+___________________
 {  
         "testTcp":{  
         "Name":"testTcp",  
@@ -30,9 +32,9 @@ Configuration file:
 }  
 
   
-  SourceAddr|-----------|DstBindIp         
-  --------->| smartProxy|---------------> DstAddr  
-     server |-----------| client  
+.  SourceAddr|-----------|DstBindIp         
+.  --------->| smartProxy|---------------> DstAddr  
+.     server |-----------| client  
   
 AclRule: IPNets["10.1.1.2/24","2.2.2.2/16"]  Rule: 0 permit; 1 deny  
 
