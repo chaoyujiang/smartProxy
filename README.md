@@ -5,7 +5,7 @@ TCP/UDP proxy
 
 Configuration file:  
 {  
-    "testTcp":{  
+        "testTcp":{  
         "Name":"testTcp",  
         "SourceAddr":"0.0.0.0:8800",  
         "DstBindIp":"0.0.0.0",  
