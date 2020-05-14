@@ -6,38 +6,38 @@ TCP/UDP L4 layer proxy
 The action of every agent <br />
 into the world <br />
 starts <br />
-  from their physical selves. <br />
+from their physical selves. <br />
 Configuration file:
 ---------------------
 {  
         "testTcp":{  
-        "Name":"testTcp",  
-        "SourceAddr":"0.0.0.0:8800",  
-        "DstBindIp":"0.0.0.0",  
-        "DstAddr":"10.2.13.50:8800",  
-        "Protocol":"tcp",  
-        "AclRule":{  
-                     "IPNets":["10.1.1.38/24"],  
-                     "Rule": 1   
-        }     
-    },    
-    "testUdp":{  
-        "Name":"testUdp",  
-        "SourceAddr":"0.0.0.0:8801",  
-        "DstBindIp":"0.0.0.0",  
-        "DstAddr":"10.2.13.50:8801",  
-        "Protocol":"udp",  
-        "AclRule":{  
-                     "IPNets":["10.1.1.38/24"],  
-                     "Rule": 1     
-        }       
-    }       
+        "Name":"testTcp",  
+        "SourceAddr":"0.0.0.0:8800",  
+        "DstBindIp":"0.0.0.0",  
+        "DstAddr":"10.2.13.50:8800",  
+        "Protocol":"tcp",  
+            "AclRule":{  
+                "IPNets":["10.1.1.38/24"],  
+                "Rule": 1   
+            }     
+        },    
+        "testUdp":{  
+        "Name":"testUdp",  
+        "SourceAddr":"0.0.0.0:8801",  
+        "DstBindIp":"0.0.0.0",  
+        "DstAddr":"10.2.13.50:8801",  
+        "Protocol":"udp",  
+        "AclRule":{  
+            "IPNets":["10.1.1.38/24"],  
+             "Rule": 1     
+        }       
+    }       
 }  
 
   
-.  SourceAddr|-----------|DstBindIp         
-.  --------->| smartProxy|---------------> DstAddr  
-.     server |-----------| client  
+    SourceAddr|-----------|DstBindIp         
+    --------->| smartProxy|---------------> DstAddr  
+       server |-----------| client  
   
 AclRule: IPNets["10.1.1.2/24","2.2.2.2/16"]  Rule: 0 permit; 1 deny  
 
