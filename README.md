@@ -41,3 +41,10 @@ AclRule: IPNets["10.1.1.2/24","2.2.2.2/16"]  Rule: 0 permit; 1 deny
 
 For example: "AclRule":{"IPNets":["10.1.1.38/24"],"Rule": 1 } , The client with ip 10.1.1.18 will be denied, because it is in the subnet 10.1.1.0/24.    
  
+BUILD
+-----------
+go build -o smartProxy *.go   
+
+START
+----------
+./smartProxy -c smartProxy.conf  
