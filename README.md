@@ -4,13 +4,13 @@ TCP/UDP L4 layer proxy
 ![logic diagram](smartProxy.jpg)
 
 The action of every agent <br />
-  into the world <br />
+into the world <br />
 starts <br />
   from their physical selves. <br />
 Configuration file:
 ---------------------
 {  
-        "testTcp":{  
+        "testTcp":{  
         "Name":"testTcp",  
         "SourceAddr":"0.0.0.0:8800",  
         "DstBindIp":"0.0.0.0",  
