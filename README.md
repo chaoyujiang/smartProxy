@@ -1,7 +1,7 @@
 # smartProxy
 TCP/UDP L4 layer proxy
 =====================
-![logic diagram](https://github.com/chaoyujiang/style-pictures/blob/master/smartProxy.jpg)
+![logic diagram](smartProxy.jpg)
 
 
 Configuration file:
